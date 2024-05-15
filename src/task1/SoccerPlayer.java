@@ -14,7 +14,7 @@ public class SoccerPlayer extends Player {
 
     @Override
     public void say() {
-        say("SUUUUUUUUUUUUUI!");
+        say("SIUUUUUUUUUUU!");
     }
 
     @Override
