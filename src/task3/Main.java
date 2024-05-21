@@ -89,7 +89,7 @@ public class Main {
         String str2 = reader.readLine();
         String str3 = reader.readLine();
 
-        // Task 1
+        // Task 3.1
         var shortest = findShortestV1(str1, str2, str3);
         var longest = findLongestV1(str1, str2, str3);
 
@@ -99,14 +99,14 @@ public class Main {
         System.out.println(findShortestV2(str1, str2, str3));
         System.out.println(findLongestV2(str1, str2, str3));
 
-        // Task 2
+        // Task 3.2
         System.out.println("Strings with length less than average: ");
         for (String str : findLowestThenAvgV1(str1, str2, str3)) {
             System.out.printf("%s, length: %d \n", str, str.length());
         }
         System.out.println(Arrays.toString(findLowestThenAvgV2(str1, str2, str3)));
 
-        // Task 3
+        // Task 3.3
         var stringWithUniqueSymbols = findStringWithUniqueSymbols(str1, str2, str3);
         if(stringWithUniqueSymbols != null) {
             System.out.println("String with unique symbols is " + stringWithUniqueSymbols);
@@ -114,7 +114,7 @@ public class Main {
             System.out.println("String with unique symbols not found.");
         }
 
-        // Task 4
+        // Task 3.4
         System.out.println("New string with duplicates symbols: " + duplicateSymbols(str1));
     }
 }
