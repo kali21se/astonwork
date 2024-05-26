@@ -7,7 +7,9 @@ public class Student {
     private String name;
 
     private String group;
+
     private int course;
+
     private List<Double> grades;
 
     public Student(String name, String group, int course, List<Double> grades) {
