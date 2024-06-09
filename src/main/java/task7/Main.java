@@ -15,7 +15,7 @@ public class Main {
                 final var buyerCount = random.nextInt(0, 2);
                 final var goodsCount = random.nextInt(1, 4);
                 for (int i = 0; i < buyerCount; i++) {
-                    var buyer = new Buyer();
+                    final var buyer = new Buyer();
                     executorService.execute(() -> {
                         buyer.enterToMarket();
                         buyer.takeBasket();
