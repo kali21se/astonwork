@@ -25,7 +25,7 @@ public class Main {
                         }
                         buyer.goOut();
                         System.out.println("Shopping is done for " + buyer);
-                        System.out.println("Conflict test");
+                        System.out.println("Conflict test - resolved");
                     });
                 }
             }, 0, 1, TimeUnit.SECONDS);
