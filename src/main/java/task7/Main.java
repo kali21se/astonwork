@@ -12,8 +12,8 @@ public class Main {
         try (ExecutorService executorService = Executors.newFixedThreadPool(10);
              ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor()) {
             scheduledExecutorService.scheduleAtFixedRate(() -> {
-                var buyerCount = random.nextInt(0, 2);
-                var goodsCount = random.nextInt(1, 4);
+                final var buyerCount = random.nextInt(0, 2);
+                final var goodsCount = random.nextInt(1, 4);
                 for (int i = 0; i < buyerCount; i++) {
                     var buyer = new Buyer();
                     executorService.execute(() -> {
